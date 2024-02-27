@@ -1,5 +1,6 @@
 import { LibraryInterfaces } from "../services/interfaces";
 import { Book } from "./bookmodul";
+import { Borrower, BorrowedBook } from "./borrowmodule";
 
 export class LibraryStock implements LibraryInterfaces.LibraryStock {
     private books: Map<number, Book> = new Map();
